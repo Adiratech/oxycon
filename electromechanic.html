@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147208165-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+        gtag('config', 'UA-147208165-1');
+    </script>
+    <title>Oxycon and Telemedicine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <style>
+        .bd-placeholder-img {
+             font-size: 1.925rem;
+             text-anchor: middle;
+             -webkit-user-select: none;
+             -moz-user-select: none;
+             -ms-user-select: none;
+             user-select: none;
+        }
+
+     @media (min-width: 768px) {
+         .bd-placeholder-img-lg {
+              font-size: 3.5rem;
+          }
+     }
+    
+     .jumbotron {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      margin-bottom: 0;
+      background-color: #fff;
+     }
+     @media (min-width: 768px) {
+        .jumbotron {
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+        }
+     }
+
+     .jumbotron p:last-child {
+      margin-bottom: 0;
+     }
+
+     .jumbotron-heading {
+      font-weight: 300;
+     }
+
+     .jumbotron .container {
+      max-width: 40rem;
+     }
+
+     footer {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+     }
+
+     footer p {
+      margin-bottom: .25rem;
+     }      
+     .btn-sm { margin-bottom: .25rem !important; }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar navbar-light bg-light shadow-sm">
+          <div class="container d-flex justify-content-between">
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+              <i class="fa fa-cog fa-spin fa-fw"></i>
+              <strong>Oxycon</strong>
+            </a>
+          </div>
+          <div class="navbar navbar-light bg-light navbar-right">
+            <a class="navbar-brand" href="#">Electromechanic</a>
+          </div>
+        </div>
+    </header>
+
+    <main role="main">
+
+        <section class="jumbotron text-center">
+            <div class="container">
+                <p><small class="text-muted">Last updated: <strong>04-19-2023 15:04</strong></small></p>
+        
+                <h4 class="jumbotron-heading">Smart Remote Medicine (Telemedicine) </h4>
+                <h2><strong>Oxygen Concentrator Integrated Telemedicine for SpO2 Treatment</strong></h2>
+        
+                <h3 class="jumbotron-heading"><span class="bg-warning"> </span>  <span class="bg-warning"> </span>  </h3>
+              <p class="lead text-muted">
+                <strong>Sub-System Electromechanic Analysis </strong> and <strong>Design Embedded</strong> of Oxygen Concentrator Mobile</p>
+              <p><small class="text-muted">
+                Do you Agree ? Help us improve data quality by <a href="https://bit.ly/EL6240-Datascience-Web">filling out</a> this form.
+              </small></p>
+              <p>
+                <a href="home.html" class="btn btn-outline-primary btn-sm">Home</a>
+                <a href="mechanical.html" class="btn btn-outline-primary btn-sm">Mechanical</a>
+                <a href="electromechanic.html" class="btn btn-outline-primary btn-sm">Electromechanic</a> 
+                <a href="physical.html" class="btn btn-outline-primary btn-sm">Physical</a>
+                <a href="software.html" class="btn btn-outline-primary btn-sm">Algorithm and Software</a>      
+              </p>
+            </div>
+        </section>
+    
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <!-- Introduction -->
+                    <section class="jumbotron">
+                        <div class="media">
+                            <img class="align-self-center mr-3" src="images/OXYCON/SUB-SISTEM-ELEKTROMEKANIK-OXYCON/Oxygen Concentrator-Flow chart.png" alt="Generic placeholder image">
+                            <div class="media-body">
+                              <h5 class="mt-0">Algorithm for Control The PSA</h5>
+                              <p class="text-justify">This section addresses the system to get temperature and humidity data using a telemetry sensor. The implementation of the telemetry tool uses the SHT35 sensor which has an accuracy value of ±0.2 °C and ±2 %RH, 
+                                  for temperature and humidity, respectively. The tip of the sensor is protected by a Stevenson screen to block direct solar radiation. The telemetry sensor retrieves temperature and humidity data every minute and 
+                                  sends to the database via MQTT (Message Queuing Telemetry Transport) lightweight communication protocol every hour. On some remaining time, it goes into sleep mode, and signal wake up from RTC (Real Time Clock) DS3231, 
+                                  with an AT24C32 EEPROM (Electrically Erasable Programmable Read-only Memory) used as a temporary data storage area. In the cloud, our system takes and advantage of services from Amazon Web Service (AWS). The AWS EC2 service 
+                                  utilizes Mosquitto MQTT broker. AWS DynamoDB is a place to store data in noSQL type. AWS Lambda is a module to compute and store query functions to the database. And the AWS API (Application Programming Interface) is to provide API access that triggers functions in Lambda.</p>
+                            </div>
+                          </div>
+                    </section>
+
+                    <!--Show the schematic-->
+                    <div class="col-md-12 text-center">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header"; style="font-size: 30px;"><strong>Schematic of Electronic Circuit</strong></div>
+                            <img src="images/OXYCON/SUB-SISTEM-ELEKTROMEKANIK-OXYCON/schematic_oxycon.png" class="card-image-top" alt="...">
+                            <div class="card-footer">Ruas Otista (Urban I); Sp. Batununggal (Urban II); Sp. Pahlawan (Urban III); Sp. Telkom (Urban IV); Batununggal Residence (Suburban I); Cikutra Residence (Suburban II)</div>
+                        </div>
+                    </div>
+                    
+                    <!--Show the implementation of PCB-->
+                    <div class="col-md-12 text-center">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header"; style="font-size: 30px;"><strong>Implementation of Electronic Circuit</strong></div>
+                            <img src="images/OXYCON/SUB-SISTEM-ELEKTROMEKANIK-OXYCON/Oxygen Concentrator-Embedded.png" class="card-image-top" alt="...">
+                            <div class="card-footer">Ruas Otista (Urban I); Sp. Batununggal (Urban II); Sp. Pahlawan (Urban III); Sp. Telkom (Urban IV); Batununggal Residence (Suburban I); Cikutra Residence (Suburban II) </div>
+                        </div>
+                    </div>
+
+                    <!--Show the NPN transistor gate schematic -->
+                    <div class="col-md-12 text-center">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header"; style="font-size: 30px;"><strong>Implementation of NPN Transistor for Relay</strong></div>
+                            <img src="images/OXYCON/SUB-SISTEM-ELEKTROMEKANIK-OXYCON/Oxygen Concentrator-TIP121.png" class="card-image-top" alt="...">
+                            <div class="card-footer">Ruas Otista (Urban I); Sp. Batununggal (Urban II); Sp. Pahlawan (Urban III); Sp. Telkom (Urban IV); Batununggal Residence (Suburban I); Cikutra Residence (Suburban II) </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right"><a href="#"> Back to Top</a></p>
+            <p><strong>Vehicles Density & Microclimate</strong> are Data Science project based learning using information of Microclimate and Vehilce Density in several urban area Bandung City. The Data (Primary Data) were collected with direc investigation using sensor Based IoT <a href="#">(API Sensor)</a> and Camera live streaming ATCS <a href="http://atcs-dishub.bandung.go.id/">(Live Streaming ATCS).</a>  Furthermore we are using secondary data from <a href="https://bandungkota.bps.go.id/">BPS Kota Bandung</a>  </p>
+            <p><small><strong>2022</strong> | <strong> Galang Adira, et al.</strong> (galangadira89@gmail.com) | <strong>Computer Engineering STEI ITB</strong></small></p>
+        </div>
+    </footer>
+</body>
+</html>
