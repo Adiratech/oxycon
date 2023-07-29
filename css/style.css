@@ -14,23 +14,31 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    color: #ffffff ;
+    color: #ffffff;
     overflow: hidden;
 }
 
 .jumbotron img {
     width: 400px;
     border: 5px solid #eaeaea;
-    box-shadow: 1px 1px 10 px rgba(0,0,0,0,5);
+    box-shadow: 1px 1px 10 px rgba(0, 0, 0, 0, 5);
 }
 
 .jumbotron h2 {
     height: 450px;
 }
 
-.jumbotron h1, .jumbotron p {
-    text-shadow: 1px 1px 10 px rgba(0,0,0,0,5);
-    color:black;
+.jumbotron h1,
+.jumbotron p {
+    text-shadow: 1px 1px 10 px rgba(0, 0, 0, 0, 5);
+    color: black;
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
 }
 
 hr {
@@ -38,15 +46,16 @@ hr {
     border-top: 4px solid #999;
 }
 
-h3 { 
-    color:black;
+h3 {
+    color: black;
 }
 
 section {
     min-height: 800px;
 }
 
-.pKiri, .pKanan {
+.pKiri,
+.pKanan {
     opacity: 0;
     transform: translate(-50px, 0) rotate(15deg);
     transition: 1s;
@@ -59,12 +68,14 @@ section {
     text-align: justify;
 }
 
-.pKiri.pMuncul, .pKanan.pMuncul {
+.pKiri.pMuncul,
+.pKanan.pMuncul {
     opacity: 1;
-    transform: translate(0,0);
+    transform: translate(0, 0);
 }
+
 .portofolio {
-    background-color:#eee ;
+    background-color: #eee;
 }
 
 .portofolio .thumbnail {
@@ -75,7 +86,7 @@ section {
 
 .portofolio .thumbnail.muncul {
     opacity: 1;
-    transform: translate(0,0);
+    transform: translate(0, 0);
 }
 
 .contact {
@@ -96,3 +107,8 @@ footer p {
     font-size: 1em;
 }
 
+.image-medicaloxycon {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+}
